@@ -262,3 +262,20 @@ template {
 }
 
 /* CSS Reset Ends */
+
+/* Base Styles */
+body {
+  background-color: rgba(202, 202, 202, 0.86);
+}
+
+.wrapper {
+  max-width: 1300px;
+  margin: 0 auto;
+  width: 90%;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Base Styles Ends */
