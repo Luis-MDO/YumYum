@@ -72,9 +72,13 @@ const App = () => {
   // Render the component
   return (
     <div className="app wrapper">
-      <h1 class="logo">YumYum</h1>
+      <h1 className="logo">YumYum</h1>
       <form className="app__search-form" onSubmit={handleSearchSubmit}>
+        <label htmlFor="searchInput" className="sr-only">
+          Search:
+        </label>
         <input
+          id="searchInput"
           className="app__search-bar"
           type="text"
           value={search}
