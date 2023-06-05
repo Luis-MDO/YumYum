@@ -3,6 +3,8 @@ import style from "./meals.module.css";
 
 // Recipe component represents a single recipe card
 const RecipeCards = ({ title, calories, image, ingredients }) => {
+  const roundedCalories = Math.floor(calories);
+
   return (
     <div className={style.recipe}>
       <h2>{title}</h2>
@@ -12,7 +14,7 @@ const RecipeCards = ({ title, calories, image, ingredients }) => {
           <li>{ingredient.text}</li>
         ))}
         <li>
-          <p>Calories : {calories}</p>
+          <p>Calories : {roundedCalories}</p>
         </li>
       </ul>
     </div>
