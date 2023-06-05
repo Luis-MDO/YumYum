@@ -279,3 +279,40 @@ ul {
 }
 
 /* Base Styles Ends */
+
+/* Main Component Styles */
+.app {
+  text-align: center;
+  padding: 20px;
+}
+
+.logo {
+  font-size: 86px;
+  color: #bf6c6c;
+}
+
+.app__search-form {
+  margin-bottom: 20px;
+}
+
+.app__search-bar {
+  padding: 10px;
+  font-size: 16px;
+}
+
+.app__search-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.app__recipes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 30px;
+}
+
+/* Main Component Styles Ends */
