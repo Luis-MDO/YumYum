@@ -35,10 +35,12 @@ const App = () => {
     }
   }, [randomQuery]);
 
-  // Use the useEffect hook to fetch recipes when the query changes
   useEffect(() => {
     fetchRecipes();
-  }, [fetchRecipes]);
+    document.title = query
+      ? `${capitalizeFirstLetter(query)} - YumYum Recipes`
+      : "YumYum";
+  }, [fetchRecipes, query]);
 
   // Function to generate a random query from a predefined list
   const generateRandomQuery = () => {
@@ -55,6 +57,11 @@ const App = () => {
     ];
     const randomIndex = Math.floor(Math.random() * randomQueries.length);
     return randomQueries[randomIndex];
+  };
+
+  // Capitalize the first letter of a string in this case the browser tab title
+  const capitalizeFirstLetter = (string) => {
+    return string.charAt(0).toUpperCase() + string.slice(1);
   };
 
   // Event handler for the search input field change
