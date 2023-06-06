@@ -1,0 +1,44 @@
+/* meals.module.css */
+
+.recipeCard {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 3rem;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.recipeCard h4 {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.recipeCard .image {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 1.5rem;
+}
+
+.recipeCard ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.recipeCard ul li {
+  margin-bottom: .5rem;
+  line-height: 1.3rem;
+}
+
+.recipeCard p {
+  margin-top: 2rem;
+  font-weight: 600;
+}
+
+.recipeCard .highlight {
+  font-weight: 400;
+  color: red;
+}

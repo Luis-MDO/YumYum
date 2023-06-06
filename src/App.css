@@ -265,7 +265,7 @@ template {
 
 /* Base Styles */
 body {
-  background-color: rgba(202, 202, 202, 0.86);
+  background-color: rgba(207, 215, 197, 0.86);
 }
 
 .wrapper {
@@ -287,12 +287,12 @@ ul {
 }
 
 .logo {
-  font-size: 86px;
+  font-size: 6rem;
   color: #bf6c6c;
 }
 
 .app__search-form {
-  margin-bottom: 20px;
+  margin-bottom: 5rem;
 }
 
 .app__search-bar {
@@ -301,12 +301,19 @@ ul {
 }
 
 .app__search-button {
-  padding: 10px 20px;
+  padding: 12px 20px;
   font-size: 16px;
-  background-color: #4caf50;
+  background-color: #4caf4fa6;
   color: white;
   border: none;
   cursor: pointer;
+  margin-left: .3rem;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.app__search-button:hover,
+.app__search-button:focus {
+  background-color: #bf6c6c
 }
 
 .app__recipes {
