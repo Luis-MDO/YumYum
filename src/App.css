@@ -264,7 +264,6 @@ template {
 /* CSS Reset Ends */
 
 /* Base Styles */
-
 body {
   background-color: rgba(207, 215, 197, 0.86);
 }
@@ -323,19 +322,34 @@ ul {
   color: white;
   border: none;
   cursor: pointer;
-  margin-left: .3rem;
+  margin-left: 0.3rem;
   transition: background-color 0.3s, color 0.3s;
 }
 
 .app__search-button:hover,
 .app__search-button:focus {
-  background-color: #bf6c6c
+  background-color: #bf6c6c;
 }
 
 .app__recipes {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 30px;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 450px) {
+  .logo {
+    font-size: 4rem;
+  }
+
+  .app {
+    padding: 20px 0;
+  }
+
+  .wrapper {
+    width: 95%;
+  }
 }
 
 /* Main Component Styles Ends */
