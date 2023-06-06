@@ -71,39 +71,45 @@ const App = () => {
 
   // Render the component
   return (
-    <div className="app wrapper">
-      <h1 className="logo">YumYum</h1>
-      <h2 className="search__form-title">
-        Enter an ingredient in the search bar.
-      </h2>
-      <form className="app__search-form" onSubmit={handleSearchSubmit}>
-        <label htmlFor="searchInput" className="sr-only">
-          Search:
-        </label>
-        <input
-          id="searchInput"
-          className="app__search-bar"
-          type="text"
-          value={search}
-          placeholder="e.g Avocado"
-          onChange={handleSearchChange}
-        />
-        <button className="app__search-button" type="submit">
-          Search
-        </button>
-      </form>
-      <div className="app__recipes">
-        {/* Map through the recipes and render each Recipe component */}
-        {recipes.map((recipe) => (
-          <Recipe
-            key={recipe.recipe.label}
-            title={recipe.recipe.label}
-            calories={recipe.recipe.calories}
-            image={recipe.recipe.image}
-            ingredients={recipe.recipe.ingredients}
+    <div className="app">
+      <div className="wrapper">
+        <h1 className="logo">YumYum</h1>
+        <h2 className="search__form-title">
+          Enter an ingredient in the search bar.
+        </h2>
+        <form className="app__search-form" onSubmit={handleSearchSubmit}>
+          <label htmlFor="searchInput" className="sr-only">
+            Search:
+          </label>
+          <input
+            id="searchInput"
+            className="app__search-bar"
+            type="text"
+            value={search}
+            placeholder="e.g Avocado"
+            onChange={handleSearchChange}
           />
-        ))}
+          <button className="app__search-button" type="submit">
+            Search
+          </button>
+        </form>
+        <div className="app__recipes">
+          {/* Map through the recipes and render each Recipe component */}
+          {recipes.map((recipe) => (
+            <Recipe
+              key={recipe.recipe.label}
+              title={recipe.recipe.label}
+              calories={recipe.recipe.calories}
+              image={recipe.recipe.image}
+              ingredients={recipe.recipe.ingredients}
+            />
+          ))}
+        </div>
       </div>
+
+      <footer className="app__footer">
+        <p>Designed and Created by Luis || &copy; All Rights Reserved</p>
+      </footer>
     </div>
   );
 };
