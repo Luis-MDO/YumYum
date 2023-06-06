@@ -264,6 +264,7 @@ template {
 /* CSS Reset Ends */
 
 /* Base Styles */
+
 body {
   background-color: rgba(207, 215, 197, 0.86);
 }
@@ -272,6 +273,16 @@ body {
   max-width: 1300px;
   margin: 0 auto;
   width: 90%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
 }
 
 ul {
@@ -289,6 +300,11 @@ ul {
 .logo {
   font-size: 6rem;
   color: #bf6c6c;
+}
+
+.search__form-title {
+  margin: 2rem 0;
+  font-weight: 400;
 }
 
 .app__search-form {

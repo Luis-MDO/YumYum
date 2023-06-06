@@ -73,7 +73,9 @@ const App = () => {
   return (
     <div className="app wrapper">
       <h1 className="logo">YumYum</h1>
-      <h2>Enter an ingredient in the search bar.</h2>
+      <h2 className="search__form-title">
+        Enter an ingredient in the search bar.
+      </h2>
       <form className="app__search-form" onSubmit={handleSearchSubmit}>
         <label htmlFor="searchInput" className="sr-only">
           Search:
