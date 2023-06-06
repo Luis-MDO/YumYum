@@ -7,7 +7,7 @@ const RecipeCards = ({ title, calories, image, ingredients }) => {
 
   return (
     <div className={style.recipeCard}>
-      <h4>{title}</h4>
+      <h3>{title}</h3>
       <img className={style.image} src={image} alt={title} />
       <ul>
         {ingredients.map((ingredient) => (
